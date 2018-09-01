@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="xkicks.com v2.7.3">
+	<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>用户中心_新新球鞋网-中国专业的-运动鞋站点-sneaker球鞋文化社区-正品球鞋运动鞋在线销售商城|NIKE耐克|JORDAN|乔丹|新百伦|NEW BALANCE|奢侈品</title>
+	<link rel="stylesheet" type="text/css" href="css/registor.css">
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+</head>
+	<body>
+	<header>
+		<div class="header-one">
+			<div class="w1170">
+				<ul class="list-left">
+					<li>
+						<a href="http://www.x-kicks.com/index.php" class="active">X-KICKS商城</a>
+					</li>
+					<li>
+						<a href="http://www.x-kicks.com/infor.php">X-KICKS资讯</a>
+					</li>
+					<li>
+						<a href="http://bbs.x-kicks.com/forum.php">X-KICKS社区</a>
+					</li>
+					<li>
+						<a href="http://www.x-kicks.com/app.php">X-KICKS&nbsp;APP</a>
+					</li>
+				</ul>
+				<ul class="list-right">
+					<li class="fore" style="overflow: hidden;">
+						<a href="user.php" title="登录" class="font_write p20">登录</a>
+						<a href="register.php" title="注册" class="font_yellow p20">注册</a>
+					</li>
+					<li class="spacer"></li>
+					<li class="fore">
+						<a href="user.php?act=order_list" class="p20">订单</a>
+						<a href="user.php?act=collection_list" class="p20">收藏</a>
+						<a href="article.php?id=5175" class="p20">帮助中心</a>
+						<a href="javascript:;" onclick="addfavorite(window.location,document.title)" class="p20">收藏新新</a>
+						<a href="tel:4008819878" title="热线电话" class="p20" style="color: red">400-881-9878</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-two">
+			<div class="w1170">
+				<div class="logo">
+					<img src="../logo.png" alt="">
+				</div>
+				<div class="promiseSafe">
+					<ul>
+						<li>
+							<i class="iconfont">
+								
+							</i>
+							<em>正品保障</em>
+						</li>
+						<li>
+							<i></i>
+							<em>实物拍摄</em>
+						</li>
+						<li>
+							<i></i>
+							<em>闪电发货</em>
+						</li>
+						<li>
+							<i></i>
+							<em>7天无理由退货</em>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<content>
+		<form>
+			<div class="w1170">
+				<div class="login-logo">
+					<img src="../pic/login_ban.jpg">
+				</div>
+				<div class="login-box">
+					<div class="regist-font">
+						<h1>欢迎注册</h1>
+						<h3>已经是会员？<a href="user.php">立即登录</a></h3>
+					</div>
+					<div class="regist-input">
+						<input type="text" placeholder="用户名" name="username" size="25" id="username" onblur="is_registered(this.value);">
+						<span id="username_notice" style="color:#FF0000">
+						</span>
+					</div>
+					<div class="regist-input">
+						<input type="E-mail" placeholder="email" name="email" size="25" id="email" onblur="checkEmail(this.value);">
+						<span id="email_notice" style="color:#FF0000"></span>
+					</div>
+					<div class="regist-input">
+						<input type="password" placeholder="密码" name="password" id="password1" onblur="check_password(this.value);" onkeyup="checkIntensity(this.value)" autocomplete="off">
+						<ul class="regist-password">
+							<li>
+								<span id="pwd_lower"></span>
+								弱
+							</li>
+							<li>
+								<span id="pwd_middle"></span>
+								中
+							</li>
+							<li>
+								<span id="pwd_higher"></span>
+								强
+							</li>
+						</ul>
+					</div>
+					<div class="regist-input">
+						<input type="password" placeholder="确认密码" name="confirm_password" id="conform_password" onblur="check_conform_password(this.value);" autocomplete="off">
+						<span style="color:#FF0000" id="conform_password_notice"></span>
+						<input name="act" type="hidden" value="act_register">
+						<input type="hidden" name="back_act" value="">
+					</div>
+					<div class="regist-safe">
+						<span>
+                    		<input name="agreement" type="checkbox" checked="checked" class="checkbox">
+                        	<label>我已看过并接受《<a href="" style="color:blue" target="_blank">用户协议</a>》
+                        	</label>
+               	  		</span>
+					</div>
+					<div class="regist-btn">
+						<a href="javascript:;" class="btn-entry" onclick="$('#formUser').submit();">立即注册</a>
+					</div>
+				</div>
+				
+			</div>
+		</form>
+	</content>
+	<footer>
+		<p>
+		2016-2017  新新球鞋网 版权所有，并保留所有权利。浙公网安备 33108202000112号 浙ICP备08017537号
+		</p>
+	</footer>
+	</body>
+</html>
